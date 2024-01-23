@@ -60,6 +60,27 @@
 
 # Функция enumerate() позволяет пронумеровать набор данных.
 
-users = ['user1', 'user2', 'user3']
-data = list(enumerate(users))
-print(data)
+# users = ['user1', 'user2', 'user3']
+# data = list(enumerate(users))
+# print(data)
+
+# Задаем функцию def:
+# def sum_numbers(n, y = 'Hello'):
+#     print(y) # задаем функцию
+#     summa = 0
+#     for i in range(1, n+1):
+#         summa+=i
+#     return summa # возвращаем нашу функцию
+
+# print(sum_numbers(5, 'data')) # вводим данные в функцию
+
+# Пример: функция, которая принимает неограниченное количество аргументов:
+# def sum_str (*args):
+#     res = ''
+#     for i in args:
+#         res+=i 
+#     return res
+# print(sum_str('5' 'w' '5678' 'erw'))
+# print(sum_str('5' 'w' '5678' 'erw' '5' 'w' '5678' 'erw'))
+
+# Рекурсия

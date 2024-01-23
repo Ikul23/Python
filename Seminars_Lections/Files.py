@@ -33,13 +33,17 @@
 # data.close() # data.close() — используется для закрытия файла, чтобы разорвать подключение файловой
 #             #переменной с файлом на диске. 
 #             # exit() — позволяет не выполнять код, прописанный после этой команды в скрипте.
-#Режим (w) записив файл
+#Режим (w) записи в файл
 # with open('file.txt', 'w') as data:
 #     data.write('line 1\n')
-#     data.write('line 2\n')
-# Режим чтения из файла в консоль
-path = 'file.txt'
-data = open(path, 'r')
-for line in data:
-    print(line)
-data.close()
+# #     data.write('line 2\n')
+# # Режим чтения из файла в консоль
+# path = 'file.txt'
+# data = open(path, 'r')
+# for line in data:
+#     print(line)
+# data.close()
+file = open('file.txt', 'r', encoding='utf-8')
+with print(file.readline()) as file: # открывает и закрывает файл
+# print(file.readlines())
+file.close()
