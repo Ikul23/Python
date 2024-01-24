@@ -2,7 +2,6 @@
 # из одного файла в другой. Пользователь вводит номер строки,
 # которую необходимо перенести из одного файла в другой.
 
-from return_data_file import print_file
 
 def copy_line(source_file, destination_file, line_number):
     try:
@@ -20,9 +19,8 @@ def copy_line(source_file, destination_file, line_number):
     except FileNotFoundError:
         print("Ни один из файлов не найден.")
 
-# Пример использования:
-source_file_path = 'исходный_файл.txt'
-destination_file_path = 'целевой_файл.txt'
+source_file_path = 'db\data_1.txt'
+destination_file_path = 'db\data_2.txt'
 
 user_line_number = int(input("Введите номер строки для копирования: "))
 
